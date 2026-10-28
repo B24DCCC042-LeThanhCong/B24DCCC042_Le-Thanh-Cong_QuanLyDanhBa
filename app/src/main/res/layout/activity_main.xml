@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F7FB">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh bạ của tôi"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#172554"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản lý liên hệ thật dễ dàng"
+        android:textSize="14sp"
+        android:textColor="#64748B"
+        android:paddingBottom="16dp" />
+
+    <EditText
+        android:id="@+id/edtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:hint="⌕  Tìm tên hoặc số điện thoại..."
+        android:singleLine="true"
+        android:inputType="text"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textSize="15sp"
+        android:textColor="#1E293B"
+        android:background="@drawable/bg_search_box" />
+
+    <TextView
+        android:id="@+id/txtStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#475569"
+        android:paddingTop="14dp"
+        android:paddingBottom="10dp" />
+
+    <ListView
+        android:id="@+id/listContacts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        android:background="@android:color/transparent"
+        android:fastScrollEnabled="true" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="+  Thêm liên hệ"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2563EB" />
+
+</LinearLayout>

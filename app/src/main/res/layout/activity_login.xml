@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="26dp">
+
+        <TextView
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:gravity="center"
+            android:text="☎"
+            android:textSize="42sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_login_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Danh Bạ Của Tôi"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#172554"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập để quản lý các liên hệ"
+            android:textSize="15sp"
+            android:textColor="#64748B"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="28dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/bg_form_card">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên đăng nhập"
+                android:textStyle="bold"
+                android:textColor="#334155"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Nhập tên đăng nhập"
+                android:inputType="text"
+                android:singleLine="true"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textSize="15sp"
+                android:background="@drawable/bg_input_box" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mật khẩu"
+                android:textStyle="bold"
+                android:textColor="#334155"
+                android:textSize="14sp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Nhập mật khẩu"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textSize="15sp"
+                android:background="@drawable/bg_input_box" />
+
+            <TextView
+                android:id="@+id/txtError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#DC2626"
+                android:textSize="13sp"
+                android:visibility="gone"
+                android:paddingTop="10dp"
+                android:paddingBottom="4dp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="Đăng nhập"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#2563EB"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý liên hệ đơn giản và tiện lợi"
+            android:textSize="12sp"
+            android:textColor="#94A3B8"
+            android:gravity="center"
+            android:layout_marginTop="22dp" />
+
+    </LinearLayout>
+</ScrollView>
